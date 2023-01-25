@@ -1,0 +1,66 @@
+Step-1
+files connect 
+edit 
+need to check all the checkbox are checked
+Reference*
+
+Step-2
+Google cloud platform
+api and services
+credentials
+from create credentials,Oauth client Id
+Configure the content screen
+apiName - Salesforce
+userSupport Mail - Mail Id
+Email address 
+save & back to dashboard
+
+Step-3
+Credentials
+Oauth client Id
+web application
+Name
+Create
+
+Step-4
+Auth. Providers
+Google
+Consumer id & Secret from google
+Endpoint url - https:\\accounts.google.com/o/oauth2/auth?access_type=offline&approval_prompt=force
+Scope: openid email profile https://www.googleapis.com/auth/drive
+save
+copy callbackurl
+paste the callback url in redirect urls in cloudspace
+
+Step-5
+pemissionSet
+label-filesconnect_user
+system permission
+edit
+filesconnectcloud-enablecheckbox
+save
+
+manage assignment
+add systemadim assign
+
+Step-6
+external datasource resources
+new
+type-perUser
+filesconnect google drive
+Oauth 2.0
+authentication provider - googledrive(auth provider)
+before saving in cloudspace,Oauth consent screen,testUser-add mailId
+click save in external datasource resources
+validate and sync the drive
+
+Step-7
+enable api services
+google drive
+enable
+
+Step-8
+permission set
+External datasource resources
+edit add created file
+save
